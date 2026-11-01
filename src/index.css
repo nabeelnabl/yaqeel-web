@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('/fonts/GeneralSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/fonts/NeueHaasGrotesk-Roman.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/fonts/NeueHaasGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/fonts/NeueHaasGrotesk-Medium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('/fonts/NeueHaasGrotesk-Bold.woff') format('woff'),
+       url('/fonts/NeueHaasGrotesk-TextBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --breakpoint-xs: 400px;
+  --font-neue: 'Neue Haas Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-general: 'General Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Neue Haas Grotesk', 'General Sans', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-geist: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --color-brand-50: #f0f7ff;
+  --color-brand-100: #e0effe;
+  --color-brand-200: #bae0fd;
+  --color-brand-300: #7cc5fb;
+  --color-brand-400: #38a5f8;
+  --color-brand-500: #2563eb;
+  --color-brand-600: #1d4ed8;
+  --color-brand-700: #1e40af;
+  --color-brand-800: #1e3a8a;
+  --color-brand-900: #172554;
+  --color-brand-950: #0b1329;
+
+  --color-yaqeel-brand: #5B34EA;
+  --color-yaqeel-violet: #542BE0;
+  --color-yaqeel-mint: #B4E3CB;
+  --color-yaqeel-coral: #F6A590;
+}
+
+html, body {
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.font-neue {
+  font-family: 'Neue Haas Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
